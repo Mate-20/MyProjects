@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to right bottom, #7178b2, #64b1c1);
+    background-repeat: repeat-y;
+}
+label{
+    color: white;
+    font-weight:bold ;
+}
+.card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 41px;
+}
+
+.search-area {
+    /* background: linear-gradient(to right bottom, #7178b2, #64b1c1); */
+    position: relative;
+}
+
+.card-title {
+    background-color: #dae9ff;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #86b4ff;
+}
+
+.name {
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: 13px;
+     
+}
+
+
+.brand {
+    width: 200px;
+    height: 30px;
+    margin-left: 13px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.price {
+    width: 200px;
+    height: 30px;
+    margin-left: 3.8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.btn1 {
+    border: 2px solid rgb(113, 147, 220);
+    border-radius: 30px;
+    width: 100px;
+    color: rgb(113, 147, 220);
+    background-color: white;
+}
+
+.btn1:hover {
+    background-color: #d7fff8;
+    font-size: 15.6px;
+}
+
+.clear {
+    border: 2px solid rgb(232, 88, 88);
+    border-radius: 30px;
+    width: 200px;
+    color: rgb(232, 88, 88);
+    background-color: white;
+    margin-left: 144px;
+}
+
+.clear:hover {
+    background-color: #ffd7d7;
+    font-size: 15.6px;
+}
+
+.welcome {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+.logout {
+    border: 2px solid rgb(232, 88, 88);
+    border-radius: 30px;
+    width: 70px;
+    color: rgb(232, 88, 88);
+    background-color: white;
+    /* margin-left: 134px; */
+}
+
+.logout:hover {
+    background-color: #ffd7d7;
+    font-size: 15.6px;
+}

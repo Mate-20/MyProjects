@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="details.component.css">
+<body>
+    <div class="container card-container d-flex justify-content-center align-items-center">
+        <div class="card container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <img [src]="product.imagePath" alt="image shown" class="card-img">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Brand : {{product.brand}}</h5>
+                        <h5 class="card-title">Name : {{product.name}}</h5>
+                        <p class="card-text">Details :{{product.details}}</p>
+                        <h5 class="card-title">Price : {{product.price}}</h5>
+                    </div>
+                </div>
+                <!-- Pincode Search -->
+                <div class="container">
+                    <div class="pincode-text mt-3">
+                        <h6>Enter Pincode to check the Availability</h6>
+                    </div>
+                    <form class="mt-2 pincode-form" (ngSubmit)="checkAvail(pincode.value)">
+                        <input class="pincode-input" type="text" placeholder="Pincode" #pincode>
+                        <button type="submit" class="ms-3 btn mb-1">Search</button>
+                    </form>
+                    <div *ngIf="message !== ''" [class.error]="message !== 'Product is Available for your Area'"
+                        [class.success]="message === 'Product is Available for your Area'">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>

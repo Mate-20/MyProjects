@@ -1,0 +1,156 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.App {
+  width: 100%;
+  max-width: 700px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header{
+  /* background-color: rgb(228, 215, 197); */
+  background-color: #272626;
+  color:antiquewhite;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+
+}
+.Footer {
+  color: antiquewhite;
+  width: 100%;
+  background-color: #272626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer p{
+  position: relative;
+  top: 10px;
+}
+
+.Nav {
+  width: 100%;
+  background-color: #272626;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+
+}
+
+.Nav li {
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+  
+}
+
+.Nav li a {
+  color:antiquewhite;
+  text-decoration: none;
+  font-size: 20px; 
+  transition: font-size .2s;
+}
+.Nav li:hover a, 
+.Nav li:focus a,
+.PostPage a:hover, 
+.PostPage Link:hover,
+.likebtn:hover,
+.dislikebtn:hover ,
+.viewbtn:hover {
+  cursor: pointer;
+  font-size: 21px;
+}
+.post{
+  box-shadow: -5px 5px 5px rgb(62, 62, 62);
+  border-radius: 10px;
+}
+
+.Home, .NewPost, .PostPage, .About, .Missing, .EditPost {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color:antiquewhite;
+
+}
+.likes{
+  border: 1px solid rgb(250, 179, 179);
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  bottom: 10px;
+}
+.postBody {
+  font-size: 20px;
+}
+
+.Missing h2, .PostPage h2, 
+.Missing p, .PostPage p {
+  margin-bottom: 1rem;
+}
+
+.likebtn,.dislikebtn, .viewbtn {
+  transition: font-size .2s;
+  height: 50px;
+}
+
+.PostPage a,.PostPage Link {
+  transition: font-size .2s;
+}
+
+.statusMsg {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 620px) {
+  html {
+    font-size: 22px;
+  }
+
+  .Nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Nav li:hover, 
+  .Nav li:focus, 
+  .Nav li:hover a, 
+  .Nav li:focus a  {
+    background-color: #eee;
+    border-radius: 10px;
+    color: #333;
+  }
+}

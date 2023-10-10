@@ -1,0 +1,30 @@
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center register-container">
+        <form [formGroup]="registerForm" (ngSubmit)="register()" class="register-form">
+            <h4 class="mb-3">Register as new User</h4>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" formControlName="email">
+                <div class="email" *ngIf="registerForm.get('email')?.invalid">Email entered is not valid</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" formControlName="name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" name="pass1" formControlName="pass1">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" name="pass2" formControlName="pass2">
+            </div>
+            <div *ngIf="message !== ''" [class.error]="message !== 'Registration Successful'"
+                [class.success]="message === 'Registration Successful'">
+                {{ message }}
+            </div>
+            <button [disabled]="registerForm.invalid" type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>

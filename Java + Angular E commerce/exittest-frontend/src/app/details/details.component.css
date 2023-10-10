@@ -1,0 +1,70 @@
+body{
+    background-image: url('https://origence.com/wp-content/uploads/2021/04/20-MKTGCRM-0029_Blog-Article_CRM-Business-Intel_Final.jpg');
+}
+.card{
+    width: 60vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+.card-container{
+    height: 100vh;
+}
+
+.card-img {
+    width: 20vw
+}
+.card-body{
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    background: linear-gradient(to left bottom, rgb(58, 58, 58),rgb(103, 99, 99));
+}
+
+.pincode-text {
+    margin-left: 99px;
+}
+
+.pincode-form {
+    margin-left: 99px;
+}
+
+.pincode-input {
+    border-radius: 10px;
+    border: 1px solid rgb(106, 185, 235);
+}
+
+.btn {
+    border: 2px solid rgb(113, 147, 220);
+    border-radius: 30px;
+    width: 100px;
+    color: rgb(113, 147, 220);
+    height: 30px;
+    padding: 0;
+}
+
+.btn:hover {
+    background-color: #d7fff8;
+    font-size: 15.6px;
+}
+
+.error {
+    background-color: #ffcdcd;
+    border-radius: 5px;
+    color: red;
+    padding: 5px;
+    width: 400px;
+    margin-left: 99px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.success {
+    background-color: #c9fbcc;
+    border-radius: 5px;
+    color: green;
+    padding: 5px;
+    width: 400px;
+    margin-left: 99px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

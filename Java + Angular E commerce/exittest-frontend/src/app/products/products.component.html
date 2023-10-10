@@ -1,0 +1,56 @@
+<!-- Search -->
+
+<body>
+    <div class="container search-area d-flex">
+        <div class=" d-flex flex-column">
+            <form class="mt-2" (ngSubmit)="getByName(name.value)">
+                <label>Search By Name :</label>
+                <input class="name" type="text" placeholder="Name" #name>
+                <button type="submit" class="ms-3 btn1">Search</button>
+            </form>
+            <form class="mt-2" (ngSubmit)="getByBrand(brand.value)">
+                <label>Search By Brand :</label>
+                <input class="brand" type="text" placeholder="Brand" #brand>
+                <button type="submit" class="ms-3 btn1">Search</button>
+            </form>
+            <form class="mt-2" (ngSubmit)="onPriceRangeChange(price.value)">
+                <label>Enter Price Range :</label>
+                <input type="text" placeholder="ex : 20-100" #price class="price">
+                <button type="submit" class="ms-3 btn1">Filter</button>
+            </form> 
+            <button class="clear mt-2" (click)="fetchProducts()" (click)="clearSearch(name,brand,price)">Clear
+                Search</button>
+        </div>
+        <div class="welcome mt-2">
+            <h2>Welcome {{displayName}}</h2>
+            <button class="logout" (click)="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div *ngIf="products.length === 0" class="text-center mt-3">
+        <p>No products found.</p>
+    </div>
+
+    <div class="container cards">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-md-4 mb-4 text-center"
+                        *ngFor="let product of (filter.length > 0 ? filter : products)">
+                        <div class="card mt-2" style="width: 18rem;">
+                            <img class="card-img-top" [src]="product.imagePath" alt="Card image cap"
+                                style="height: 200px; width: 250px;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Price: {{product.price}}</li>
+                            </ul>
+                            <div class="card-body">
+                                <h5 class="card-title">{{product.name}}</h5>
+                                <button class="btn btn-primary" (click)="details(product.id)">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

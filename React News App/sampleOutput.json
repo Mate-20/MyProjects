@@ -1,0 +1,32 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "NDTV News"
+            },
+            "author": null,
+            "title": "Police Case Against 4 Over Editors' Guild's Crowdfunded Manipur Report - NDTV",
+            "description": "NDTV.com: India, Business, Bollywood, Cricket, Video and Breaking News",
+            "url": "https://www.ndtv.com/news",
+            "urlToImage": "https://cdn.ndtv.com/common/images/ogndtv.png",
+            "publishedAt": "2023-09-04T04:59:29Z",
+            "content": ""
+        },
+        {
+            "source": {
+                "id": "the-times-of-india",
+                "name": "The Times of India"
+            },
+            "author": "TIMESOFINDIA.COM",
+            "title": "India vs Nepal Asia Cup 2023, Pallekele weather update: Rain threatens another damp affair - Times of India",
+            "description": "Cricket News: The Asia Cup match between India and Nepal faces rain threat as the Monday weather forecast for Pallekele doesn't look promising. The weather for Mond",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/asia-cup/india-vs-nepal-asia-cup-2023-pallekele-weather-update-rain-threatens-another-damp-affair/articleshow/103337786.cms",
+            "urlToImage": "https://static.toiimg.com/thumb/msid-103337934,width-1070,height-580,imgsize-70626,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+            "publishedAt": "2023-09-04T03:05:00Z",
+            "content": "Asia Cup India vs Nepal: India hope rain stays away in match against NepalThere was robust debate late on Saturday, on social media, YouTube channels and news channels, on who were luckier of the two… [+172 chars]"
+        }
+    ]
+}
