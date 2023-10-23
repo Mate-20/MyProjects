@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgb(16, 15, 15);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bi-youtube {
+  color: red;
+  font-size: 30px;
+}
+
+.heading {
+  color: white;
+}
+
+.searchBtn {
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.searchBar {
+  border-radius: 20px;
+  background-color: transparent;
+  margin-left: 25vw;
+}
+
+.searchwidth {
+  width: 50vw;
+}
+
+.sideitem:hover {
+  transition-duration: .2s;
+  background-color: red;
+  border-radius: 30px;
+  width: 13vw;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: aqua;
+}
+
+.sideitem i {
+  color: red;
+}
+
+.sideitem:hover i {
+  color: white;
+}
+.selected{
+  background-color: red;
+  border-radius: 30px;
+  width: 13vw;
+}
+.selected i{
+  color: white;
+}
+
+.navbar {
+  background-color: rgb(16, 15, 15);
+}
+
+.sidebar {
+  background-color: rgb(16, 15, 15);
+  border-right: 1px solid whitesmoke;
+}
+
+.video-title {
+  color: white;
+}
+
+.video-title span {
+  color: red;
+}
+
+.videocard {
+  height: 300px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  filter: drop-shadow(5px 10px 10px #363636);
+}
+
+.videocard img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-text {
+  color: rgb(122, 122, 122);
+  font-weight: 600;
+}
+
+.channelcard{
+  justify-content: center;
+  text-align: center;
+}
+.channelcard img{
+  width: 200px;
+  height: 200px; 
+  overflow: hidden;
+  border-radius: 50%;  
+  border: 1px solid white;
+}
+.channelTitle{
+  margin-top: -40px;
+  color: white;
+}
+.channelTitle i{
+  color: grey;
+  font-size: 10px;
+}
+.coverpage{
+  width: 100vw;
+  height: 25vh;
+  background: radial-gradient(circle, rgba(214,153,180,1) 0%, rgba(183,169,205,1) 51%, rgba(148,187,233,1) 100%);
+  z-index: 10;
+}
+.coverpage h1{
+  font-size: 4rem;
+  font-style: italic;
+  color: rgb(81, 107, 108);
+}
+.subs{
+  color: grey;
+}
+.views{
+  margin-left: 50px;
+  margin-top: 3px;
+  background-color: grey;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+}
+.likes{
+  margin-left: 10px;
+  margin-top: 3px;
+  background-color: grey;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+}
