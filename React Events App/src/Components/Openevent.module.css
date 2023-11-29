@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+
+.heading{
+    color: rgb(39, 38, 38);
+    margin: 20px;
+    font-weight: 100;
+    font-family: 'Jost', sans-serif;
+    filter: drop-shadow(1px 1px 2px black);
+}
+.mycard{
+    width: 40%;
+    animation:transitionIn 1s;
+    filter: drop-shadow(1px 1px 2px black);
+}
+@keyframes transitionIn {
+    from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+    }
+    to {
+    opacity: 1;
+    transform: rotateX(0);
+    }
+}
+.leftcontent{
+    width: 100%;
+}
+.eventname{
+    font-weight:bolder;
+    color: rgb(47, 47, 47);
+}
+.datetime{
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+}
+.calender{
+    font-size: 30px;
+    margin-right: 5px;
+}
+.details{
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+}
+.image{
+    margin-left: 10px;
+    width: 100%;
+}
+.rightconent{
+    justify-content: end;
+}

@@ -1,0 +1,41 @@
+.events{
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.date{
+    font-size: 25px;
+    font-weight: 400;
+    width: 160px;
+    color: rgb(0, 0, 0);
+}
+.time{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(171, 170, 170);
+}
+.mycard{
+    width: 100%;
+    /* background-color: transparent; */
+    color: white;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(55, 59, 57) 0%, rgb(26, 28, 28) 100%);
+    border: 1px solid rgb(32, 30, 30);
+}
+.viewbtn{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(196, 203, 200) 0%, rgb(149, 156, 156)100%);
+}
+.viewbtn:hover{
+    font-size: 14.9px;   
+    color: rgb(43, 42, 42);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(176, 184, 180) 0%, rgb(99, 104, 104) 100%);
+}
+.image{
+    border: 3px solid rgb(112, 112, 112);
+    border-radius: 4px;
+}
